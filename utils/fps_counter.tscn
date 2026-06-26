@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bv6lkod2p6e5o"]
+
+[ext_resource type="Script" uid="uid://b5ycfy3ywkyf" path="res://utils/fps_counter.gd" id="1_2ee23"]
+
+[node name="FPSCounter" type="CanvasLayer" unique_id=163315943]
+script = ExtResource("1_2ee23")
+
+[node name="Label" type="Label" parent="." unique_id=2009976591]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -146.0
+offset_bottom = 137.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1

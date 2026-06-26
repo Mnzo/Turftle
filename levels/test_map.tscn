@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cbkrub35lmqrn"]
+
+[ext_resource type="PackedScene" uid="uid://bv6lkod2p6e5o" path="res://utils/fps_counter.tscn" id="1_772xm"]
+
+[node name="TestMap" type="Node" unique_id=1993658909]
+
+[node name="Systems" type="Node" parent="." unique_id=182694369]
+
+[node name="World" type="Node3D" parent="." unique_id=1221487297]
+
+[node name="Environment" type="Node3D" parent="World" unique_id=1999090637]
+
+[node name="Entities" type="Node3D" parent="World" unique_id=267274530]
+
+[node name="HUDLayer" type="CanvasLayer" parent="." unique_id=1894229798]
+
+[node name="PauseLayer" type="CanvasLayer" parent="." unique_id=515203458]
+
+[node name="Transitionlayer" type="CanvasLayer" parent="." unique_id=1055919688]
+
+[node name="DebugLayer" type="CanvasLayer" parent="." unique_id=2136720349]
+
+[node name="FPSCounter" parent="DebugLayer" unique_id=163315943 instance=ExtResource("1_772xm")]
