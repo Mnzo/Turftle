@@ -2,6 +2,21 @@
 
 [ext_resource type="PackedScene" uid="uid://c8gul3bc0gbej" path="res://core/player/player.tscn" id="1_6eklp"]
 [ext_resource type="PackedScene" uid="uid://bv6lkod2p6e5o" path="res://utils/fps_counter.tscn" id="1_772xm"]
+[ext_resource type="PackedScene" uid="uid://dqyxnpdog3a22" path="res://core/ingredients/water.tscn" id="2_ask3y"]
+[ext_resource type="PackedScene" uid="uid://s8thmddpj0pd" path="res://assets/ingredients/turtle/Turtle.gltf" id="3_ehwo5"]
+[ext_resource type="PackedScene" uid="uid://n5rp256bvfkj" path="res://assets/ingredients/turtle/TurtleHead.gltf" id="4_hulg4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ask3y"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_gfxk6"]
+sky_material = SubResource("ProceduralSkyMaterial_ask3y")
+
+[sub_resource type="Environment" id="Environment_ehwo5"]
+background_mode = 2
+sky = SubResource("Sky_gfxk6")
+glow_enabled = true
 
 [node name="TestMap" type="Node" unique_id=1993658909]
 
@@ -11,9 +26,26 @@
 
 [node name="Environment" type="Node3D" parent="World" unique_id=1999090637]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World/Environment" unique_id=108520361]
+environment = SubResource("Environment_ehwo5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World/Environment" unique_id=1646955077]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
 [node name="Entities" type="Node3D" parent="World" unique_id=267274530]
 
 [node name="Player" parent="World/Entities" unique_id=369326982 instance=ExtResource("1_6eklp")]
+
+[node name="Ingredients" type="Node3D" parent="World" unique_id=965771695]
+
+[node name="Water" parent="World/Ingredients" unique_id=1298765475 instance=ExtResource("2_ask3y")]
+
+[node name="Turtle" parent="World/Ingredients" unique_id=1133478873 instance=ExtResource("3_ehwo5")]
+transform = Transform3D(-1.09278474e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.09278474e-07, 0, -0.08552313, 0)
+
+[node name="TurtleHead" parent="World/Ingredients/Turtle" unique_id=1683990343 instance=ExtResource("4_hulg4")]
+transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, 0, -0.09727383, 0)
 
 [node name="HUDLayer" type="CanvasLayer" parent="." unique_id=1894229798]
 

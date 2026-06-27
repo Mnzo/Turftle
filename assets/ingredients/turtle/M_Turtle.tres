@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://doo3bpy80mn0y"]
+
+[ext_resource type="Texture2D" uid="uid://ux4ex0ypyqe5" path="res://assets/ingredients/turtle/T_Turtle.png" id="1_nljkb"]
+
+[resource]
+resource_name = "M_Turtle"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_nljkb")
+roughness = 0.5
+texture_filter = 0

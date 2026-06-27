@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bj38hlt58onry"]
+
+[ext_resource type="Shader" uid="uid://bnejcjlhfq0pi" path="res://materials/SH_Water.gdshader" id="1_wfnc0"]
+[ext_resource type="Texture2D" uid="uid://dygd8dmreqeqo" path="res://materials/T_Caustic.png" id="2_6wd3t"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_wfnc0")
+shader_parameter/max_depth = 2.5000000372530002
+shader_parameter/water_level = -2.9999998956916
+shader_parameter/underwater_fog_color = Color(2.5990605e-06, 0.4646318, 0.719102, 1)
+shader_parameter/fade_start_depth = 0.5000000074506
+shader_parameter/sea_height = 0.400000019
+shader_parameter/sea_choppy = 2.8970001376075
+shader_parameter/sea_speed = 1.386000065835
+shader_parameter/sea_freq = 0.1710000081225
+shader_parameter/ITER_GEOMETRY = 3
+shader_parameter/ITER_FRAGMENT = 3
+shader_parameter/refraction_strength = 0.3499999921768
+shader_parameter/refraction_distance_fade = 13.0
+shader_parameter/normal_epsilon = 0.01
+shader_parameter/normal_smoothness_dist = 50.0
+shader_parameter/base_tint_color = Color(0.3376784, 0.7209582, 0.9999998, 1)
+shader_parameter/deep_color = Color(0, 0.24348056, 0.38763133, 1)
+shader_parameter/water_absorption = Color(0.43163723, 0.102921866, 0.042108543, 1)
+shader_parameter/roughness = 1.0
+shader_parameter/metallic = 0.0
+shader_parameter/specular = 0.50000002375
+shader_parameter/caustics_texture = ExtResource("2_6wd3t")
+shader_parameter/caustics_scale = 0.30000000447036
+shader_parameter/caustics_speed = 0.06999999843536
+shader_parameter/caustics_intensity = 1.40000002086168
+shader_parameter/caustics_depth_fade = 0.749999983236
+shader_parameter/foam_color = Color(0.7064342, 0.86796564, 1, 1)
+shader_parameter/foam_depth_start = 1.26999997161296
+shader_parameter/foam_depth_end = 0.0
+shader_parameter/foam_noise_scale = 0.63999998569472
+shader_parameter/foam_noise_speed = 1.0
+shader_parameter/foam_cutoff = 0.68999998457712
+shader_parameter/foam_crest_threshold = 1.0
+shader_parameter/foam_crest_amount = 0.80000001192096
+shader_parameter/foam_edge_color = Color(0.94129974, 0.9731625, 0.9999998, 1)
+shader_parameter/foam_edge_offset = Vector2(0.255, 0.41)
+shader_parameter/voronoi_scale = 1.5000000712500001
+shader_parameter/voronoi_strength = 0.800000038

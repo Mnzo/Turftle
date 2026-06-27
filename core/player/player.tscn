@@ -1,8 +1,28 @@
 [gd_scene format=3 uid="uid://c8gul3bc0gbej"]
 
 [ext_resource type="Script" uid="uid://cog8kvngtxtef" path="res://core/player/scripts/camera.gd" id="1_symyc"]
+[ext_resource type="Shader" uid="uid://vhh367svrstj" path="res://materials/SH_Underwater.gdshader" id="2_h46vi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lsmk5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ll17t"]
+render_priority = 0
+shader = ExtResource("2_h46vi")
+shader_parameter/sea_height = 1.3
+shader_parameter/sea_choppy = 4.0
+shader_parameter/sea_speed = 1.5
+shader_parameter/sea_freq = 0.08
+shader_parameter/height_offset = 0.0
+shader_parameter/underwater_color = Color(0.02, 0.18, 0.25, 1)
+shader_parameter/absorption_strength = 0.35
+shader_parameter/deep_tint_strength = 0.65
+shader_parameter/refraction_amount = 0.004
+shader_parameter/refraction_speed = 0.7
+shader_parameter/water_level_fudge = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_tax74"]
+material = SubResource("ShaderMaterial_ll17t")
+size = Vector2(2, 2)
 
 [node name="Player" type="CharacterBody3D" unique_id=369326982]
 
@@ -11,6 +31,12 @@ shape = SubResource("CapsuleShape3D_lsmk5")
 debug_color = Color(0.69411767, 0.49411765, 0, 0.8039216)
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1083580607]
+transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 12, 4)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=227915509]
+fov = 90.0
 script = ExtResource("1_symyc")
+
+[node name="UnderwaterQuad" type="MeshInstance3D" parent="CameraPivot/Camera3D" unique_id=530098837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1)
+mesh = SubResource("QuadMesh_tax74")

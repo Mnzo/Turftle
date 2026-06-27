@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cj2xw0a7l8uoj"]
+
+[ext_resource type="Shader" uid="uid://vhh367svrstj" path="res://materials/SH_Underwater.gdshader" id="1_i77kf"]
+
+[resource]
+render_priority = 10
+shader = ExtResource("1_i77kf")
