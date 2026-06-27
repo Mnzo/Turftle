@@ -15,17 +15,20 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Sphere"
+			"name":"Cube.003"
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"M_Turtle",
+			"name":"M_Net",
 			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
+				"baseColorFactor":[
+					0.800000011920929,
+					0.800000011920929,
+					0.800000011920929,
+					1
+				],
 				"metallicFactor":0,
 				"roughnessFactor":0.5
 			}
@@ -33,105 +36,73 @@
 	],
 	"meshes":[
 		{
-			"name":"Sphere",
+			"name":"Cube.005",
 			"primitives":[
 				{
 					"attributes":{
 						"POSITION":0,
-						"NORMAL":1,
-						"TEXCOORD_0":2
+						"NORMAL":1
 					},
-					"indices":3,
+					"indices":2,
 					"material":0
 				}
 			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"T_Turtle",
-			"uri":"T_Turtle.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":5889,
+			"count":10038,
 			"max":[
-				5.091970443725586,
-				1.932523488998413,
-				6.485217571258545
+				0.2702285051345825,
+				1.9250074625015259,
+				3.151078939437866
 			],
 			"min":[
-				-5.091967582702637,
-				-3.3991928100585938,
-				-6.65120792388916
+				-0.2697772979736328,
+				1.5998181104660034,
+				-3.165012836456299
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":5889,
+			"count":10038,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
-			"componentType":5126,
-			"count":5889,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":3,
 			"componentType":5123,
-			"count":9024,
+			"count":23316,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":70668,
+			"byteLength":120456,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":70668,
-			"byteOffset":70668,
+			"byteLength":120456,
+			"byteOffset":120456,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":47112,
-			"byteOffset":141336,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":18048,
-			"byteOffset":188448,
+			"byteLength":46632,
+			"byteOffset":240912,
 			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":206496,
-			"uri":"Turtle.bin"
+			"byteLength":287544,
+			"uri":"Net.bin"
 		}
 	]
 }

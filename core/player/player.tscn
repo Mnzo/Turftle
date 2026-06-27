@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://c8gul3bc0gbej"]
 
+[ext_resource type="Script" uid="uid://7ddarduuok2e" path="res://core/player/player.gd" id="1_ll17t"]
 [ext_resource type="Script" uid="uid://cog8kvngtxtef" path="res://core/player/scripts/camera.gd" id="1_symyc"]
 [ext_resource type="Shader" uid="uid://vhh367svrstj" path="res://materials/SH_Underwater.gdshader" id="2_h46vi"]
+[ext_resource type="Script" uid="uid://bbda8s1tss3wl" path="res://core/player/camera_pivot.gd" id="2_qjudb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lsmk5"]
 
@@ -25,13 +27,17 @@ material = SubResource("ShaderMaterial_ll17t")
 size = Vector2(2, 2)
 
 [node name="Player" type="CharacterBody3D" unique_id=369326982]
+script = ExtResource("1_ll17t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1561155410]
 shape = SubResource("CapsuleShape3D_lsmk5")
 debug_color = Color(0.69411767, 0.49411765, 0, 0.8039216)
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1083580607]
-transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 12, 4)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 9, 0)
+script = ExtResource("2_qjudb")
+min_zoom_y = 8.5
+max_zoom_y = 22.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=227915509]
 fov = 90.0
