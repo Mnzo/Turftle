@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b1qbtprr15uu2"]
+
+[ext_resource type="Shader" uid="uid://35dsnc6jki2o" path="res://assets/ingredients/trees/SH_Leaves.gdshader" id="1_oggkx"]
+[ext_resource type="Texture2D" uid="uid://ronmpyt0gsfw" path="res://assets/ingredients/trees/T_WillowLeaves.png" id="2_ca25q"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_oggkx")
+shader_parameter/color_dark = Color(0.6789241, 1, 0.608862, 1)
+shader_parameter/color_light = Color(0.15526134, 0.53857476, 0.10672001, 1)
+shader_parameter/opacity_texture = ExtResource("2_ca25q")

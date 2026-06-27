@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bb0rkndb78r2n"]
+
+[ext_resource type="Texture2D" uid="uid://h0x07geh6wd2" path="res://assets/ingredients/trees/T_WillowTrunk.png" id="1_ivvl5"]
+
+[resource]
+resource_name = "M_Trunk"
+cull_mode = 2
+albedo_texture = ExtResource("1_ivvl5")
+metallic_specular = 0.0
+uv1_scale = Vector3(5, 5, 5)
+uv1_triplanar_sharpness = 0.57434916
+texture_filter = 0
+metadata/_gltf_primary_texture_coord = 0
