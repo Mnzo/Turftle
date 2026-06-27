@@ -1,7 +1,5 @@
 extends Label
 
-@onready var label = $Label
-
 var root_viewport_rid: RID
 
 func _ready() -> void:
