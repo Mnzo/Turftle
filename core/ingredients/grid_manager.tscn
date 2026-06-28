@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://1uulv28c0i1m"]
+
+[ext_resource type="Script" uid="uid://dagduomvtin7t" path="res://core/ingredients/grid_manager.gd" id="1_u6ken"]
+[ext_resource type="PackedScene" uid="uid://cd5k3ig2dxrnn" path="res://core/ingredients/tile.tscn" id="2_qtxiw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tax74"]
+size = Vector3(14.7, 1, 9.5)
+
+[node name="GridManager" type="Area3D" unique_id=363794242]
+script = ExtResource("1_u6ken")
+tile = ExtResource("2_qtxiw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=141479606]
+shape = SubResource("BoxShape3D_tax74")
+debug_color = Color(0.9999997, 0.23968545, 0.6988528, 1)

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://darspalsunw2"
-path="res://.godot/imported/Tree_Simple_Medium.glb-7f9cc196152a44d8bd85b358d1019ff1.scn"
+uid="uid://nbvqbnjcj4u5"
+path="res://.godot/imported/Tree_Windswept_Dark.glb-57bc392c63f81f5943dcb79a1c184e05.scn"
 
 [deps]
 
-source_file="res://assets/ingredients/trees/Tree_Simple_Medium.glb"
-dest_files=["res://.godot/imported/Tree_Simple_Medium.glb-7f9cc196152a44d8bd85b358d1019ff1.scn"]
+source_file="res://assets/environment/trees/Tree_Windswept_Dark.glb"
+dest_files=["res://.godot/imported/Tree_Windswept_Dark.glb-57bc392c63f81f5943dcb79a1c184e05.scn"]
 
 [params]
 

@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://c8gul3bc0gbej" path="res://core/player/player.tscn" id="1_6eklp"]
 [ext_resource type="PackedScene" uid="uid://dqyxnpdog3a22" path="res://core/ingredients/water.tscn" id="2_ask3y"]
 [ext_resource type="PackedScene" uid="uid://42ecr64fg7td" path="res://core/ingredients/turtle.tscn" id="3_ehwo5"]
+[ext_resource type="PackedScene" uid="uid://1uulv28c0i1m" path="res://core/ingredients/grid_manager.tscn" id="5_3huin"]
 [ext_resource type="Material" uid="uid://qhplrpf33bdn" path="res://materials/SHM_PP_PS2.tres" id="7_mtm4k"]
-[ext_resource type="PackedScene" uid="uid://cxmkc4gq46rqy" path="res://assets/ingredients/trees/Tree_Willow.gltf" id="8_en8i3"]
+[ext_resource type="PackedScene" uid="uid://cxmkc4gq46rqy" path="res://assets/environment/trees/Tree_Willow.gltf" id="8_en8i3"]
 [ext_resource type="PackedScene" uid="uid://cw505c1igloni" path="res://utils/fps_counter.tscn" id="8_mtm4k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ask3y"]
@@ -35,6 +36,20 @@ transform = Transform3D(-0.33685803, -0.94047374, 0.045122355, 0.7988311, -0.260
 light_energy = 2.0
 shadow_enabled = true
 
+[node name="Trees" type="Node" parent="World/Environment" unique_id=823122350]
+
+[node name="Tree_Willow" parent="World/Environment/Trees" unique_id=1275404355 instance=ExtResource("8_en8i3")]
+transform = Transform3D(0.014071509, 0, 0.08627836, 0, 0.087418325, 0, -0.08627836, 0, 0.014071509, 2.311595, 3.0551949, -6.118191)
+
+[node name="Tree_Willow3" parent="World/Environment/Trees" unique_id=1304908170 instance=ExtResource("8_en8i3")]
+transform = Transform3D(0.068004526, 0, 0.0011270512, 0, 0.068013884, 0, -0.0011270512, 0, 0.068004526, 8.788206, 3.0551949, -1.2582228)
+
+[node name="Tree_Willow4" parent="World/Environment/Trees" unique_id=428732538 instance=ExtResource("8_en8i3")]
+transform = Transform3D(-0.049532026, 0, 0.036555167, 0, 0.061560556, 0, -0.036555167, 0, -0.049532026, -8.22024, 3.055194, -2.2213128)
+
+[node name="Tree_Willow2" parent="World/Environment/Trees" unique_id=1660963110 instance=ExtResource("8_en8i3")]
+transform = Transform3D(-0.023046011, 0, -0.0364989, 0, 0.043165833, 0, 0.0364989, 0, -0.023046011, -4.611327, 2.694841, -5.7987323)
+
 [node name="Entities" type="Node3D" parent="World" unique_id=267274530]
 
 [node name="Player" parent="World/Entities" unique_id=369326982 instance=ExtResource("1_6eklp")]
@@ -46,19 +61,10 @@ shadow_enabled = true
 [node name="Turtle" parent="World/Ingredients" unique_id=1298588752 instance=ExtResource("3_ehwo5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4251213, 0)
 
-[node name="Trees" type="Node" parent="World/Ingredients" unique_id=823122350]
-
-[node name="Tree_Willow" parent="World/Ingredients/Trees" unique_id=1275404355 instance=ExtResource("8_en8i3")]
-transform = Transform3D(0.014071509, 0, 0.08627836, 0, 0.087418325, 0, -0.08627836, 0, 0.014071509, 2.311595, 3.0551949, -6.118191)
-
-[node name="Tree_Willow3" parent="World/Ingredients/Trees" unique_id=1304908170 instance=ExtResource("8_en8i3")]
-transform = Transform3D(0.068004526, 0, 0.0011270512, 0, 0.068013884, 0, -0.0011270512, 0, 0.068004526, 8.788206, 3.0551949, -1.2582228)
-
-[node name="Tree_Willow4" parent="World/Ingredients/Trees" unique_id=428732538 instance=ExtResource("8_en8i3")]
-transform = Transform3D(-0.049532026, 0, 0.036555167, 0, 0.061560556, 0, -0.036555167, 0, -0.049532026, -8.22024, 3.055194, -2.2213128)
-
-[node name="Tree_Willow2" parent="World/Ingredients/Trees" unique_id=1660963110 instance=ExtResource("8_en8i3")]
-transform = Transform3D(-0.023046011, 0, -0.0364989, 0, 0.043165833, 0, 0.0364989, 0, -0.023046011, -4.611327, 2.694841, -5.7987323)
+[node name="GridManager" parent="World/Ingredients" unique_id=363794242 instance=ExtResource("5_3huin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7115877, 0)
+grid_area_size = Vector3(14, 1, 9)
+columns_number = 8
 
 [node name="HUDLayer" type="CanvasLayer" parent="." unique_id=1894229798]
 

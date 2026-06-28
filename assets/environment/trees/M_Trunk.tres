@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bb0rkndb78r2n"]
 
-[ext_resource type="Texture2D" uid="uid://h0x07geh6wd2" path="res://assets/ingredients/trees/T_WillowTrunk.png" id="1_ivvl5"]
+[ext_resource type="Texture2D" uid="uid://h0x07geh6wd2" path="res://assets/environment/trees/T_WillowTrunk.png" id="1_ivvl5"]
 
 [resource]
 resource_name = "M_Trunk"

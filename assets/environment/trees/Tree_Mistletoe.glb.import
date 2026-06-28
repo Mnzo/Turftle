@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://nbvqbnjcj4u5"
-path="res://.godot/imported/Tree_Windswept_Dark.glb-6847ad95750e8ca63528b9eb815209d3.scn"
+uid="uid://5vkb2upanh5h"
+path="res://.godot/imported/Tree_Mistletoe.glb-a606720e9b9673a88052dcff5d276172.scn"
 
 [deps]
 
-source_file="res://assets/ingredients/trees/Tree_Windswept_Dark.glb"
-dest_files=["res://.godot/imported/Tree_Windswept_Dark.glb-6847ad95750e8ca63528b9eb815209d3.scn"]
+source_file="res://assets/environment/trees/Tree_Mistletoe.glb"
+dest_files=["res://.godot/imported/Tree_Mistletoe.glb-a606720e9b9673a88052dcff5d276172.scn"]
 
 [params]
 

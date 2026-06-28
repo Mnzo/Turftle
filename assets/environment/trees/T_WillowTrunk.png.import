@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h0x07geh6wd2"
-path.s3tc="res://.godot/imported/T_WillowTrunk.png-e9916b2c87023010a9b28dc74e488b67.s3tc.ctex"
-path.etc2="res://.godot/imported/T_WillowTrunk.png-e9916b2c87023010a9b28dc74e488b67.etc2.ctex"
+path.s3tc="res://.godot/imported/T_WillowTrunk.png-9ad4c47c4c685061440148ba57212341.s3tc.ctex"
+path.etc2="res://.godot/imported/T_WillowTrunk.png-9ad4c47c4c685061440148ba57212341.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/ingredients/trees/T_WillowTrunk.png"
-dest_files=["res://.godot/imported/T_WillowTrunk.png-e9916b2c87023010a9b28dc74e488b67.s3tc.ctex", "res://.godot/imported/T_WillowTrunk.png-e9916b2c87023010a9b28dc74e488b67.etc2.ctex"]
+source_file="res://assets/environment/trees/T_WillowTrunk.png"
+dest_files=["res://.godot/imported/T_WillowTrunk.png-9ad4c47c4c685061440148ba57212341.s3tc.ctex", "res://.godot/imported/T_WillowTrunk.png-9ad4c47c4c685061440148ba57212341.etc2.ctex"]
 
 [params]
 

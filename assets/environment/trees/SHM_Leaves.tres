@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://b1qbtprr15uu2"]
 
-[ext_resource type="Shader" uid="uid://35dsnc6jki2o" path="res://assets/ingredients/trees/SH_Leaves.gdshader" id="1_oggkx"]
-[ext_resource type="Texture2D" uid="uid://ronmpyt0gsfw" path="res://assets/ingredients/trees/T_WillowLeaves.png" id="2_ca25q"]
+[ext_resource type="Shader" uid="uid://35dsnc6jki2o" path="res://assets/environment/trees/SH_Leaves.gdshader" id="1_oggkx"]
+[ext_resource type="Texture2D" uid="uid://ronmpyt0gsfw" path="res://assets/environment/trees/T_WillowLeaves.png" id="2_ca25q"]
 
 [resource]
 render_priority = 0

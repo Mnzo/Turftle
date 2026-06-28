@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://5vkb2upanh5h"
-path="res://.godot/imported/Tree_Mistletoe.glb-5aedd55c712e354944133aea0e11ec76.scn"
+uid="uid://darspalsunw2"
+path="res://.godot/imported/Tree_Simple_Medium.glb-5b94b8d9362ef728c67f657d7b2371cb.scn"
 
 [deps]
 
-source_file="res://assets/ingredients/trees/Tree_Mistletoe.glb"
-dest_files=["res://.godot/imported/Tree_Mistletoe.glb-5aedd55c712e354944133aea0e11ec76.scn"]
+source_file="res://assets/environment/trees/Tree_Simple_Medium.glb"
+dest_files=["res://.godot/imported/Tree_Simple_Medium.glb-5b94b8d9362ef728c67f657d7b2371cb.scn"]
 
 [params]
 

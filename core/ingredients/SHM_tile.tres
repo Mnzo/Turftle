@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b6fgw5db1yp8m"]
+
+[ext_resource type="Shader" uid="uid://bm0d7ekqd6hnk" path="res://core/ingredients/SH_tile.tres" id="1_ru41f"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ru41f")

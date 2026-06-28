@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cxmkc4gq46rqy"
-path="res://.godot/imported/Tree_Willow.gltf-07cf546bd301d3a3925d3691a1da2848.scn"
+path="res://.godot/imported/Tree_Willow.gltf-eee11338c92ed3514260c15aaadaf617.scn"
 
 [deps]
 
-source_file="res://assets/ingredients/trees/Tree_Willow.gltf"
-dest_files=["res://.godot/imported/Tree_Willow.gltf-07cf546bd301d3a3925d3691a1da2848.scn"]
+source_file="res://assets/environment/trees/Tree_Willow.gltf"
+dest_files=["res://.godot/imported/Tree_Willow.gltf-eee11338c92ed3514260c15aaadaf617.scn"]
 
 [params]
 
@@ -43,12 +43,12 @@ _subresources={
 "materials": {
 "M_Leaves": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/ingredients/trees/SHM_Leaves.tres",
+"use_external/fallback_path": "res://assets/environment/trees/SHM_Leaves.tres",
 "use_external/path": "uid://b1qbtprr15uu2"
 },
 "M_Trunk": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/ingredients/trees/M_Trunk.tres",
+"use_external/fallback_path": "res://assets/environment/trees/M_Trunk.tres",
 "use_external/path": "uid://bb0rkndb78r2n"
 }
 }

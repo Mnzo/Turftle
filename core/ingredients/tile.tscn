@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cd5k3ig2dxrnn"]
+
+[ext_resource type="Material" uid="uid://b6fgw5db1yp8m" path="res://core/ingredients/SHM_tile.tres" id="1_jfyp4"]
+[ext_resource type="Script" uid="uid://mhtf8ia7alu4" path="res://core/ingredients/tile.gd" id="1_pnu22"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_pnu22"]
+material = ExtResource("1_jfyp4")
+orientation = 1
+
+[node name="Tile" type="Node3D" unique_id=931167337]
+script = ExtResource("1_pnu22")
+
+[node name="Visual" type="MeshInstance3D" parent="." unique_id=1419736313]
+mesh = SubResource("QuadMesh_pnu22")
