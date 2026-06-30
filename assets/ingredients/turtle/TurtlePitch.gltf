@@ -15,13 +15,13 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Sphere"
+			"name":"Sphere.001"
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"M_Turtle",
+			"name":"M_TurtlePitch",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
@@ -33,7 +33,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Sphere",
+			"name":"Sphere.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -64,61 +64,61 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":5792,
+			"count":97,
 			"max":[
-				5.091970443725586,
-				1.932523488998413,
-				6.485217571258545
+				3.0187113285064697,
+				1.6294636726379395,
+				3.8813188076019287
 			],
 			"min":[
-				-5.091967582702637,
-				-3.3991928100585938,
-				-6.65120792388916
+				-3.018709659576416,
+				1.6294636726379395,
+				-3.943314552307129
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":5792,
+			"count":97,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":5792,
+			"count":97,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":8544,
+			"count":480,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":69504,
+			"byteLength":1164,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":69504,
-			"byteOffset":69504,
+			"byteLength":1164,
+			"byteOffset":1164,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":46336,
-			"byteOffset":139008,
+			"byteLength":776,
+			"byteOffset":2328,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":17088,
-			"byteOffset":185344,
+			"byteLength":960,
+			"byteOffset":3104,
 			"target":34963
 		}
 	],
@@ -130,8 +130,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":202432,
-			"uri":"Turtle.bin"
+			"byteLength":4064,
+			"uri":"TurtlePitch.bin"
 		}
 	]
 }

@@ -1,7 +1,5 @@
 shader_type spatial;
 
-
-
 uniform sampler2D DEPTH_TEXTURE : hint_depth_texture, filter_linear_mipmap;
 
 uniform float max_depth : hint_range(0.1, 50.0, 0.1) = 5.0;

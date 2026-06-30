@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ronmpyt0gsfw" path="res://assets/environment/trees/T_WillowLeaves.png" id="2_ca25q"]
 
 [resource]
-render_priority = 0
+render_priority = 1
 shader = ExtResource("1_oggkx")
 shader_parameter/color_dark = Color(0.6789241, 1, 0.608862, 1)
 shader_parameter/color_light = Color(0.15526134, 0.53857476, 0.10672001, 1)

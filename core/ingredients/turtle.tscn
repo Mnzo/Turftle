@@ -2,20 +2,22 @@
 
 [ext_resource type="PackedScene" uid="uid://s8thmddpj0pd" path="res://assets/ingredients/turtle/Turtle.gltf" id="1_8f6wr"]
 [ext_resource type="PackedScene" uid="uid://n5rp256bvfkj" path="res://assets/ingredients/turtle/TurtleHead.gltf" id="2_mdakb"]
+[ext_resource type="Material" uid="uid://ka1f43iru0es" path="res://materials/M_SpeedParticles.tres" id="3_105dk"]
 [ext_resource type="PackedScene" uid="uid://5557yoy8igxs" path="res://assets/ingredients/turtle/Net.gltf" id="3_l4k7g"]
+[ext_resource type="PackedScene" uid="uid://dyvmn3jpdxr35" path="res://assets/ingredients/turtle/TurtlePitch.gltf" id="4_nd3h8"]
 
 [sub_resource type="Curve" id="Curve_edk6r"]
 _data = [Vector2(0, 0.70634896), 0.0, 0.0, 0, 0, Vector2(0.24794152, 1), 0.0, 0.0, 0, 0, Vector2(0.99359566, 0.04497373), 0.0, 0.0, 0, 0]
 point_count = 3
 
-[sub_resource type="CurveTexture" id="CurveTexture_fg75k"]
+[sub_resource type="CurveTexture" id="CurveTexture_nd3h8"]
 curve = SubResource("Curve_edk6r")
 
 [sub_resource type="Curve" id="Curve_mdakb"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
-[sub_resource type="CurveTexture" id="CurveTexture_cu1o3"]
+[sub_resource type="CurveTexture" id="CurveTexture_105dk"]
 curve = SubResource("Curve_mdakb")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lsmk5"]
@@ -29,16 +31,11 @@ initial_velocity_min = 10.0
 initial_velocity_max = 20.0
 gravity = Vector3(0, 0, 0)
 scale_min = 0.29999998
-scale_curve = SubResource("CurveTexture_cu1o3")
-alpha_curve = SubResource("CurveTexture_fg75k")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mdakb"]
-transparency = 1
-depth_draw_mode = 1
-vertex_color_use_as_albedo = true
+scale_curve = SubResource("CurveTexture_105dk")
+alpha_curve = SubResource("CurveTexture_nd3h8")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_mdakb"]
-material = SubResource("StandardMaterial3D_mdakb")
+material = ExtResource("3_105dk")
 size = Vector2(10, 0.5)
 orientation = 0
 
@@ -51,7 +48,8 @@ transform = Transform3D(-1.09278474e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.09278474
 transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, 0, 0.20310974, 0)
 
 [node name="SpeedParticles" type="GPUParticles3D" parent="Turtle" unique_id=1897852672]
-transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, -4.5675662e-07, 2.7191858, -10.449373)
+transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, -4.5675662e-07, 4.9139605, -10.449373)
+layers = 7
 cast_shadow = 0
 amount = 5
 lifetime = 1.5
@@ -62,3 +60,5 @@ draw_pass_1 = SubResource("PlaneMesh_mdakb")
 
 [node name="Net" parent="Turtle" unique_id=2052995797 instance=ExtResource("3_l4k7g")]
 transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, 0, -0.13188533, 0)
+
+[node name="TurtlePitch" parent="Turtle" unique_id=929138270 instance=ExtResource("4_nd3h8")]

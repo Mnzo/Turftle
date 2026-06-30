@@ -54,7 +54,7 @@ func update_camera() -> void:
 	position = Vector3(0.0, new_zoom_y, new_zoom_z)
 	rotation = Vector3(new_zoom_rotx, 0.0, 0.0)
 	
-	print("Current Alpha " + str(current_zoom_alpha))
-	print("Destination Alpha " + str(current_zoom_alpha))
-	print(position)
-	print(rotation)
+	#print("Current Alpha " + str(current_zoom_alpha))
+	#print("Destination Alpha " + str(current_zoom_alpha))
+	#print(position)
+	#print(rotation)

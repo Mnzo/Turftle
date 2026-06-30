@@ -27,21 +27,28 @@ func create_tiles() -> void:
 	var width_x: float = box_shape.size.x
 	var depth_z: float = box_shape.size.z
 	var center: Vector3 = grid_area.global_position
-	var extents: Vector3 = box_shape.size / 2.0
 	
 	var desired_size_x: float = width_x / float(columns_number)
 	var desired_size_z: float = depth_z / float(rows_number)
-	
 	var square_tile_size: float = min(desired_size_x, desired_size_z)
 	
+	var total_grid_width: float = float(columns_number) * square_tile_size
+	var total_grid_depth: float = float(rows_number) * square_tile_size
+	
+	var offset_x: float = (width_x - total_grid_width) / 2.0
+	var offset_z: float = (depth_z - total_grid_depth) / 2.0
+	
+	var extents: Vector3 = box_shape.size / 2.0
 	var start_corner_x: float = center.x - extents.x
 	var start_corner_z: float = center.z - extents.z
+	
+	grid_map.clear()
 	
 	for r in range(rows_number):
 		for c in range(columns_number):
 		
-			var local_x: float = start_corner_x + (c * square_tile_size) + (square_tile_size / 2.0)
-			var local_z: float = start_corner_z + (r * square_tile_size) + (square_tile_size / 2.0)
+			var local_x: float = (start_corner_x + offset_x) + (c * square_tile_size) + (square_tile_size / 2.0)
+			var local_z: float = (start_corner_z + offset_z) + (r * square_tile_size) + (square_tile_size / 2.0)
 			
 			var spawn_location := Vector3(local_x, center.y, local_z)
 			

@@ -16,7 +16,7 @@ func _process(_delta) -> void:
 	else:
 		zoom_direction = 0;
 	
-	print(zoom_direction)
+	#print(zoom_direction)
 
 func get_mouse_world_position() -> Vector3:
 	var viewport = get_viewport()

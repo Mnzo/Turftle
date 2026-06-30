@@ -3,5 +3,7 @@
 [ext_resource type="Shader" uid="uid://bm0d7ekqd6hnk" path="res://core/ingredients/SH_tile.tres" id="1_ru41f"]
 
 [resource]
-render_priority = 0
+render_priority = 10
 shader = ExtResource("1_ru41f")
+shader_parameter/Color = Color(1, 0, 0, 1)
+shader_parameter/EmissiveStrength = 1.0

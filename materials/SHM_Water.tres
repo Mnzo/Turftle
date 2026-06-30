@@ -4,16 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dygd8dmreqeqo" path="res://materials/T_Caustic.png" id="2_6wd3t"]
 
 [resource]
-render_priority = 0
+render_priority = 1
 shader = ExtResource("1_wfnc0")
 shader_parameter/max_depth = 2.500000037253
 shader_parameter/water_level = -2.9999998956916
 shader_parameter/underwater_fog_color = Color(1.4439225e-06, 0.4594702, 0.71353, 1)
 shader_parameter/fade_start_depth = 0.80000001192096
 shader_parameter/sea_height = 0.400000019
-shader_parameter/sea_choppy = 0.0
-shader_parameter/sea_speed = 1.386000065835
-shader_parameter/sea_freq = 0.0530000025175
+shader_parameter/sea_choppy = 2.000000095
+shader_parameter/sea_speed = 1.5000000712500001
+shader_parameter/sea_freq = 0.10000000475
 shader_parameter/ITER_GEOMETRY = 3
 shader_parameter/ITER_FRAGMENT = 3
 shader_parameter/refraction_strength = 0.3499999921768

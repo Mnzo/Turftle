@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://s8thmddpj0pd"
-path="res://.godot/imported/Turtle.gltf-82c9bfe0312a1d585ad10166e879b28d.scn"
+uid="uid://dyvmn3jpdxr35"
+path="res://.godot/imported/TurtlePitch.gltf-800fd924b4700f3acd43f6810c213f1f.scn"
 
 [deps]
 
-source_file="res://assets/ingredients/turtle/Turtle.gltf"
-dest_files=["res://.godot/imported/Turtle.gltf-82c9bfe0312a1d585ad10166e879b28d.scn"]
+source_file="res://assets/ingredients/turtle/TurtlePitch.gltf"
+dest_files=["res://.godot/imported/TurtlePitch.gltf-800fd924b4700f3acd43f6810c213f1f.scn"]
 
 [params]
 
@@ -41,15 +41,15 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"M_Turtle": {
+"M_TurtlePitch": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/ingredients/turtle/M_Turtle.tres",
-"use_external/path": "uid://doo3bpy80mn0y"
+"use_external/fallback_path": "res://assets/ingredients/turtle/M_TurtlePitch.tres",
+"use_external/path": "uid://c8sgxwsio6g7r"
 }
 },
 "nodes": {
-"PATH:Sphere": {
-"mesh_instance/layers": 7
+"PATH:Sphere_001": {
+"mesh_instance/layers": 2
 }
 }
 }

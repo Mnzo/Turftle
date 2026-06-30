@@ -6,6 +6,9 @@ extends Node3D
 var tile_row_id: int = 0
 var tile_column_id: int = 0
 
+func _process(delta) -> void:
+	print(global_position.y)
+
 func setup_tile_data(size_x: float, size_z: float, row_id: int, column_id: int) -> void:
 	tile_row_id = row_id
 	tile_column_id = column_id
@@ -14,7 +17,7 @@ func setup_tile_data(size_x: float, size_z: float, row_id: int, column_id: int) 
 		visual.mesh = visual.mesh.duplicate()
 		visual.mesh.size = Vector2(size_x, size_z)
 		
-		var mat = visual.get_material_override()
+		var mat = visual.mesh.surface_get_material(0)
 		if mat:
 			var unique_mat = mat.duplicate()
 			visual.set_material_override(unique_mat)

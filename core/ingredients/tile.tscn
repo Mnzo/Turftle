@@ -11,4 +11,5 @@ orientation = 1
 script = ExtResource("1_pnu22")
 
 [node name="Visual" type="MeshInstance3D" parent="." unique_id=1419736313]
+layers = 7
 mesh = SubResource("QuadMesh_pnu22")
