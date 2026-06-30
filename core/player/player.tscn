@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://7ddarduuok2e" path="res://core/player/player.gd" id="1_ll17t"]
 [ext_resource type="Script" uid="uid://cog8kvngtxtef" path="res://core/player/scripts/camera.gd" id="1_symyc"]
 [ext_resource type="Shader" uid="uid://vhh367svrstj" path="res://materials/SH_Underwater.gdshader" id="2_h46vi"]
-[ext_resource type="Script" uid="uid://bbda8s1tss3wl" path="res://core/player/camera_pivot.gd" id="2_qjudb"]
-[ext_resource type="Script" uid="uid://cf3orsu6yrpob" path="res://core/player/camera_zoom.gd" id="3_xttum"]
+[ext_resource type="Script" uid="uid://bbda8s1tss3wl" path="res://core/player/scripts/camera_pivot.gd" id="2_qjudb"]
+[ext_resource type="Script" uid="uid://cf3orsu6yrpob" path="res://core/player/scripts/camera_zoom.gd" id="3_xttum"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lsmk5"]
 
